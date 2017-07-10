@@ -12,6 +12,11 @@
 		82FF70781F13A4F00038CEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FF70761F13A4F00038CEF8 /* Main.storyboard */; };
 		82FF707A1F13A4F00038CEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82FF70791F13A4F00038CEF8 /* Assets.xcassets */; };
 		82FF707D1F13A4F00038CEF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FF707B1F13A4F00038CEF8 /* LaunchScreen.storyboard */; };
+		82FF727E1F13A8F00038CEF8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FF727D1F13A8F00038CEF8 /* Bolts.framework */; };
+		82FF72801F13A9190038CEF8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FF727F1F13A9190038CEF8 /* FBSDKCoreKit.framework */; };
+		82FF72821F13A9460038CEF8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FF72811F13A9460038CEF8 /* FBSDKLoginKit.framework */; };
+		82FF72841F13A95A0038CEF8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FF72831F13A95A0038CEF8 /* FBSDKShareKit.framework */; };
+		82FF72871F13AAB80038CEF8 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FF72861F13AAB80038CEF8 /* test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		82FF70791F13A4F00038CEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82FF707C1F13A4F00038CEF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82FF707E1F13A4F00038CEF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82FF727D1F13A8F00038CEF8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		82FF727F1F13A9190038CEF8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		82FF72811F13A9460038CEF8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		82FF72831F13A95A0038CEF8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		82FF72851F13AAB80038CEF8 /* level-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "level-Bridging-Header.h"; sourceTree = "<group>"; };
+		82FF72861F13AAB80038CEF8 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FF72841F13A95A0038CEF8 /* FBSDKShareKit.framework in Frameworks */,
+				82FF727E1F13A8F00038CEF8 /* Bolts.framework in Frameworks */,
+				82FF72801F13A9190038CEF8 /* FBSDKCoreKit.framework in Frameworks */,
+				82FF72821F13A9460038CEF8 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +74,13 @@
 				82FF70761F13A4F00038CEF8 /* Main.storyboard */,
 				82FF70791F13A4F00038CEF8 /* Assets.xcassets */,
 				82FF707B1F13A4F00038CEF8 /* LaunchScreen.storyboard */,
+				82FF72831F13A95A0038CEF8 /* FBSDKShareKit.framework */,
+				82FF72811F13A9460038CEF8 /* FBSDKLoginKit.framework */,
+				82FF727F1F13A9190038CEF8 /* FBSDKCoreKit.framework */,
+				82FF727D1F13A8F00038CEF8 /* Bolts.framework */,
 				82FF707E1F13A4F00038CEF8 /* Info.plist */,
+				82FF72861F13AAB80038CEF8 /* test.m */,
+				82FF72851F13AAB80038CEF8 /* level-Bridging-Header.h */,
 			);
 			path = level;
 			sourceTree = "<group>";
@@ -97,6 +118,7 @@
 					82FF706E1F13A4F00038CEF8 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2F3E52PF98;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +161,7 @@
 			files = (
 				82FF70751F13A4F00038CEF8 /* ViewController.swift in Sources */,
 				82FF70731F13A4F00038CEF8 /* AppDelegate.swift in Sources */,
+				82FF72871F13AAB80038CEF8 /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +286,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2F3E52PF98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4.24.0",
+					"$(PROJECT_DIR)/level",
+				);
 				INFOPLIST_FILE = level/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.level.level;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "level/level-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +307,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2F3E52PF98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-4.24.0",
+					"$(PROJECT_DIR)/level",
+				);
 				INFOPLIST_FILE = level/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.level.level;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "level/level-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +342,7 @@
 				82FF70831F13A4F00038CEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
